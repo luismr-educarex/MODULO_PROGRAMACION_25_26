@@ -1,4 +1,4 @@
-package unidad1;
+package unidad1.ejemplos;
 
 public class Inicio {
 
