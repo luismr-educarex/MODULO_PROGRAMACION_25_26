@@ -1,4 +1,4 @@
-package unidad2.ejemplos;
+package unidad2.ejemplos.mates;
 
 public class Matematicas {
 
