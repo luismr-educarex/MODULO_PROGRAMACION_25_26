@@ -43,14 +43,12 @@ public class Condiciones {
 			System.out.println("Aprobado");
 		}else if(notaProgramacion==6) {
 			System.out.println("Bien");
-		}else if(notaProgramacion==7) {
+		}else if(notaProgramacion==7 || notaProgramacion==8) {
 			System.out.println("Notable");
-		}else if(notaProgramacion==8) {
-			System.out.println("Notable");
-		}else if(notaProgramacion==9) {
+		}else if(notaProgramacion==9 || notaProgramacion==10) {
 			System.out.println("Sobresaliente");
 		}else {
-			System.out.println("No te lo crees ni tu");
+			System.out.println("Valor de la nota no válida");
 		}
 		
 		
