@@ -17,6 +17,7 @@ public class Aciertos {
 		int numero3;
 		int contadorAciertos=0;
 		double tasa;
+		Scanner teclado = new Scanner(System.in);
 		
 		//Generar 3 números aleatorios entre el 1 y 20
 		 aleatorio1 = generarDato();
@@ -43,12 +44,31 @@ public class Aciertos {
 		System.out.printf("Tasa de aciertos:%.2f %% ",(tasa*100));
 		
 		
+		int opcion=0;
+		do {
+			mostrarMenu();
+			
+			opcion = teclado.nextInt();
+			
+			
+			
+		} while (opcion!=2);
+		
+		
+		
 		//Añadir menú del juego
 		// 1.Jugar
 		// 2.Salir
 	
 
 	}
+	
+	private static void mostrarMenu() {
+		System.out.println("__________ JUEGO ________");
+		System.out.println("1.Jugar");
+		System.out.println("2.Salir");
+	}
+	
 	
 	private static double calcularTasa(int contadorAciertos) {
 		
