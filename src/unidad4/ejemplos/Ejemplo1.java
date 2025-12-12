@@ -13,6 +13,8 @@ public class Ejemplo1 {
 		
 		
 		String matricula = "GDC-9090";
+		
+		
 		if(validarMatricula(matricula)) {
 			vehiculo1.setMarca("Renault");
 			vehiculo1.setModelo("CLIO");
