@@ -33,6 +33,13 @@ public class CodigoEntrega {
 	public String getTipo() {
 		return tipo;
 	}
+
+	@Override
+	public String toString() {
+		return "CodigoEntrega [codigo=" + codigo + ", tipo=" + tipo + "]";
+	}
+	
+	
 	
 	
 	

@@ -5,22 +5,26 @@ public class Residuo {
 	private String nombre;
 	private double numKg;
 	private int numEntregas;
+	private Entrega[] entregas;
 	
 	public Residuo(String nombre) {
 		this.nombre=nombre;
 		numKg=0;
 		numEntregas=0;
+		
 	}
 
 	public void registrarEntrega(double numkg) {
 		this.numKg += numkg;
 		numEntregas++;
-
 	}
 	
-	public double obtenerMedia() {
-		
-		
+	public void registrarEntrega(Entrega entrega) {
+		this.numKg += entrega.getCantidad();
+		numEntregas++;
+	}
+	
+	public double obtenerMedia() {	
 		double media=0;
 		if(numEntregas>0) {
 			media = numKg/numEntregas;
@@ -55,7 +59,16 @@ public class Residuo {
 		this.numEntregas = numEntregas;
 	}
 
+	
 
+
+	public Entrega[] getEntregas() {
+		return entregas;
+	}
+
+	public void setEntregas(Entrega[] entregas) {
+		this.entregas = entregas;
+	}
 
 	@Override
 	public String toString() {
