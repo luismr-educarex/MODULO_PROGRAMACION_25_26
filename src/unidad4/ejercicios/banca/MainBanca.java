@@ -20,14 +20,12 @@ public class MainBanca {
 		bancoNavalmoral.mostrarClientes();
 
 		Cuenta cuenta1 = new Cuenta("1", 0);
-		
 		cliente1.abrirCuenta(cuenta1);
 		
 		Cuenta cuenta2 = new Cuenta("2", 0);
-		
 		cliente2.abrirCuenta(cuenta2);
-		Cuenta cuenta3 = new Cuenta("3", 0);
 		
+		Cuenta cuenta3 = new Cuenta("3", 0);
 		cliente3.abrirCuenta(cuenta3);
 		
 		
