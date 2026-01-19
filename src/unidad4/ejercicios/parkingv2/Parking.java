@@ -119,35 +119,18 @@ public class Parking {
 				boolean ocupada = plazaOcupada(i,j);
 				
 				if(ocupada) {
-					System.out.print("\u001B[31m🚗\u001B[0m");
+					System.out.print("\u001B[31m[🚗]\u001B[0m");
 				}else {
 					
-					/*switch(plaza.getTipo()) {
+					switch(plaza.getTipo()) {
 					  case MINUSVALIDO -> System.out.print("\u001B[34m[D]\u001B[0m");
-					  case FAMILIA -> System.out.print("\u001B[34m[F]\u001B[0m");
+					  case FAMILIA -> System.out.print("\u001B[33m[F]\u001B[0m");
 					  case MOTO -> System.out.print("[M]");
-					  case CARGA_ELECTRICA -> System.out.print("\u001B[33m[E]\u001B[0m");
-					  case EMERGENCIAS -> System.out.print("\u001B[30m[M]\u001B[0m");
+					  case CARGA_ELECTRICA -> System.out.print("\u001B[32m[E]\u001B[0m");
+					  case EMERGENCIAS -> System.out.print("\u001B[35m[M]\u001B[0m");
 					  default -> System.out.print("[ ]");
-					} */
-					
-					if(plaza.getTipo().equals(TPlaza.MINUSVALIDO)) {
-						System.out.print("\u001B[34m[D]\u001B[0m");
-					}else if(plaza.getTipo()==TPlaza.FAMILIA) {
-						System.out.print("\u001B[34m[F]\u001B[0m");
-					}
-					else if(plaza.getTipo()==TPlaza.MOTO) {
-						System.out.print("[M]");
-					}
-					else if(plaza.getTipo()==TPlaza.CARGA_ELECTRICA) {
-						System.out.print("\u001B[33m[E]\u001B[0m");
-					}
-					else if(plaza.getTipo()==TPlaza.EMERGENCIAS) {
-						System.out.print("\u001B[30m[M]\u001B[0m");
-					}else {
-						System.out.print("[ ]");
-					}
-					
+					} 
+
 				}
 				System.out.print("");
 			} // "Se termina una fila"
@@ -173,8 +156,9 @@ public class Parking {
 		Plaza plaza = null;
 		
 		for(Plaza p: plazas) {
-			if(p.getFila()==fila && p.getColumna()==columna);
-			plaza = p;
+			if(p.getFila()==fila && p.getColumna()==columna) {
+				plaza = p;	
+			}
 		}
 		
 		return plaza;
