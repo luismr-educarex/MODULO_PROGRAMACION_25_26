@@ -69,14 +69,40 @@ public class MainVeterinaria {
 		 * ¿Para qué la usamos?
 			Acceder rápidamente a los datos por clave
 			Relacionar un cliente con sus visitas
+			Map permite organizar información, 
+			acceder por clave y representar relaciones reales (cliente → visitas).
 		 */
 		
 		Map<String, List<Visita>> visitasPorCliente = new HashMap<>();
+		
+		
 
 		for (Visita v : visitasList) {
+			//Forma antigua
+			if (!visitasPorCliente.containsKey(v.getCliente())) {
+			    visitasPorCliente.put(v.getCliente(), new ArrayList<>());
+			}
+
+			visitasPorCliente.get(v.getCliente()).add(v);
+		
+			
+			//Forma nueva
 		    visitasPorCliente
 		        .computeIfAbsent(v.getCliente(), k -> new ArrayList<>())
 		        .add(v);
+		    
+		    
+		    //computeIfAbsent ¿Qué significa literalmente? “Calcula el valor si no existe”
+		    // Java se pregunta: ¿Existe ya una entrada con esta clave en el Map?
+		    // k -> new ArrayList<>() Esto es una expresión lambda. “Si la clave no existe, crea una nueva lista vacía”
+		    // Solo se ejecuta si la clave NO está en el mapa.
+		    // ¿Qué devuelve computeIfAbsent?
+		    // Esta es la clave del truco
+		    // computeIfAbsent(...)  → devuelve el valor asociado a la clave
+		    // Si ya existía → devuelve la lista existente
+		    // Si no existía → crea la lista, la guarda en el Map y la devuelve
+		    // Como computeIfAbsent(...) devuelve una lista, podemos hacer:
+		    // .add(v)
 		}
 		
 		
