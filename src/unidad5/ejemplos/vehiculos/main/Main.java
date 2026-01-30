@@ -6,6 +6,7 @@ import unidad5.ejemplos.vehiculos.datos.Datos;
 import unidad5.ejemplos.vehiculos.modelos.Camion;
 import unidad5.ejemplos.vehiculos.modelos.Coche;
 import unidad5.ejemplos.vehiculos.modelos.Electrico;
+import unidad5.ejemplos.vehiculos.modelos.Furgoneta;
 import unidad5.ejemplos.vehiculos.modelos.Moto;
 import unidad5.ejemplos.vehiculos.modelos.Vehiculo;
 import unidad5.ejemplos.vehiculos.services.VehiculoService;
@@ -55,6 +56,9 @@ public class Main {
 				break;
 				case "ELECTRICO":
 					v = new Electrico(id,matricula,marca,modelo,datoExtra); 
+				break;
+				case "FURGONETA":
+					v = new Furgoneta(id,matricula,marca,modelo,datoExtra);
 				break;
 				
 			}
