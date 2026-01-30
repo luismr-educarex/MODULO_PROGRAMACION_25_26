@@ -20,7 +20,7 @@ public class Datos {
 		    "15;COCHE;5566OPQ;Renault;Clio;3",
 		    "16;CAMION;6677PQR;Iveco;Stralis;20000",
 		    "17;ELECTRICO;7788QRS;Kia;EV6;528",
-		    "18;COCHE;8899RST;Peugeot;308;5",
+		    "18;FURGONETA;8899RST;Peugeot;508;8",
 		    "19;MOTO;9900STU;Suzuki;SV650;645",
 		    "20;COCHE;1011TUV;Audi;A3;5"
 		};
