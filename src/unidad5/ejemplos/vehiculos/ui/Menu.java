@@ -25,6 +25,7 @@ public class Menu {
 			System.out.println("2. Mostrar impuestos");
 			System.out.println("3. Contar vehículos por tipo");
 			System.out.println("4. Sumar impuestos por tipo");
+			System.out.println("5. Mostrar vehiculos por tipo");
 			System.out.println("0. Salir");
 			
 			opcion = teclado.nextInt();
@@ -48,6 +49,9 @@ public class Menu {
 		break;
 		case 4:
 			service.sumarImpuestosPorTipo();
+		break;
+		case 5:
+			service.mostrarVehiculosPorTipo();
 		break;
 		case 0:
 			System.out.println("Saliendo...");

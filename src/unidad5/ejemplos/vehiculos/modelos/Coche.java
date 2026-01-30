@@ -20,6 +20,30 @@ public class Coche extends Vehiculo{
 		return "COCHE";
 	}
 	
+	@Override
+	public String toString() {
+		return super.toString()+"-Número puertas:"+puertas;
+	}
+	
 	
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
