@@ -1,22 +1,24 @@
 package unidad4.ejercicios.gestioncultivos;
 
+import java.util.ArrayList;
+
 public class CampoAgricola {
 	
-	private Cultivo cultivo1;
-	private Cultivo cultivo2;
+	private ArrayList<Cultivo> cultivos;
 	
-	public void registrarCultivos(Cultivo c1,Cultivo c2) {
-		this.cultivo1=c1;
-		this.cultivo2=c2;
+	public CampoAgricola() {
+		cultivos= new ArrayList<Cultivo>();
+	}
+	
+	public void registrarCultivo(Cultivo cultivo) {
+		cultivos.add(cultivo);
 	}
 	
 	public Cultivo obtenerMasRentablePorHa() {
 		
-		if(cultivo1.calcularProduccionPorHa()>=cultivo2.calcularProduccionPorHa()) {
-			return cultivo1;
-		}else {
-			return cultivo2;
-		}
+		Cultivo cultivoMasRentable=null;
+		
+		return cultivoMasRentable;
 	}
 
 }

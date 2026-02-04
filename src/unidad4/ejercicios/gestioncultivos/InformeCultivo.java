@@ -1,6 +1,16 @@
 package unidad4.ejercicios.gestioncultivos;
 
+import java.util.ArrayList;
+
 public class InformeCultivo {
+	
+   public void mostrarInfomes(ArrayList<Cultivo> cultivos) {
+		
+		for (Cultivo cultivo : cultivos) {
+			mostrarInfome(cultivo);
+		}
+	}
+	
 	
 	public void mostrarInfome(Cultivo cultivo) {
 		
