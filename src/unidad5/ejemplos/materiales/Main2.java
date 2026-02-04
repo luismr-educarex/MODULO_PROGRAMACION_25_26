@@ -16,7 +16,7 @@ public class Main2 {
 				camionesPorMaterial.put(material, 0);
 			}
 
-			Material[] camiones = {Material.ARENA,
+			Material[] materiales = {Material.ARENA,
 					Material.CEMENTO,
 					Material.ARENA,
 					Material.GRAVA,
@@ -27,7 +27,7 @@ public class Main2 {
 			
 			try {
 
-				for(Material material: camiones) {
+				for(Material material: materiales) {
 					descargador.descargar(material);				
 					/*Integer contador = camionesPorMaterial.get(material);
 					contador++;
