@@ -7,7 +7,7 @@ public class MainEjemplos2ER {
 
 	public static void main(String[] args) {
 
-		// Validar un número entero positivo -----------------------------
+		// Ejemplo 1: Validar un número entero positivo -----------------------------
 		System.out.println("Validar un número entero positivo -----------------------------");
 
 		String texto = "12345";
@@ -21,7 +21,7 @@ public class MainEjemplos2ER {
 			System.out.println("No es un número válido");
 		}
 
-		// Buscar números dentro de un texto -----------------------------
+		//Ejemplo 2: Buscar números dentro de un texto -----------------------------
 		System.out.println("Buscar números dentro de un texto  -----------------------------");
 		texto = "Hay 3 coches y 24 motos";
 
@@ -32,7 +32,7 @@ public class MainEjemplos2ER {
 			System.out.println("Número encontrado: " + matcher.group() + " en posición " + matcher.start());
 		}
 
-		// Extraer palabras concretas (OR) -----------------------------
+		//Ejemplo 3: Extraer palabras concretas (OR) -----------------------------
 		System.out.println("Extraer palabras concretas (OR)  -----------------------------");
 		texto = "Java y Python son lenguajes populares";
 
@@ -43,7 +43,7 @@ public class MainEjemplos2ER {
 			System.out.println("Lenguaje encontrado: " + matcher.group());
 		}
 
-		// Validar un código postal español -----------------------------
+		//Ejemplo 4: Validar un código postal español -----------------------------
 		System.out.println("Validar un código postal español  -----------------------------");
 		String codigoPostal = "10300";
 
@@ -53,7 +53,7 @@ public class MainEjemplos2ER {
 
 		System.out.println("¿CP válido? " + matcher.matches());
 
-		// Sustituir palabras con replaceAll() -----------------------------
+		//Ejemplo 5: Sustituir palabras con replaceAll() -----------------------------
 		System.out.println("Sustituir palabras con replaceAll()  -----------------------------");
 		texto = "Java es divertido. Java es potente.";
 
@@ -64,7 +64,7 @@ public class MainEjemplos2ER {
 
 		System.out.println(resultado);
 
-		// Contar cuántas veces aparece un patrón --------------------------
+		//Ejemplo 6: Contar cuántas veces aparece un patrón --------------------------
 		System.out.println("Contar cuántas veces aparece un patrón  -----------------------------");
 		texto = "uno dos uno uno tres";
 
@@ -78,7 +78,7 @@ public class MainEjemplos2ER {
 
 		System.out.println("Aparece 'uno' " + contador + " veces");
 
-		// Dividir cadenas con split() usando regex ----------------------------
+		//Ejemplo 7: Dividir cadenas con split() usando regex ----------------------------
 		System.out.println("Dividir cadenas con split() usando regex  -----------------------------");
 		String datos = "Juan,  Pedro ,Ana , Luis";
 
@@ -89,7 +89,7 @@ public class MainEjemplos2ER {
 			System.out.println(n);
 		}
 
-		// Buscar URLs en un texto --------------------------
+		//Ejemplo 8: Buscar URLs en un texto --------------------------
 		System.out.println("Buscar URLs en un texto  -----------------------------");
 		texto = "Visita https://www.google.com o http://ies-augustobriga.es";
 		patron = Pattern.compile("https?://[\\w./-]+");
@@ -98,7 +98,7 @@ public class MainEjemplos2ER {
 			System.out.println("URL encontrada: " + matcher.group());
 		}
 
-		// Ignorar mayúsculas y minúsculas -----------------------
+		//Ejemplo 9: Ignorar mayúsculas y minúsculas -----------------------
 		System.out.println("Ignorar mayúsculas y minúsculas -----------------------");
 		texto = "JaVa es genial";
 
@@ -108,7 +108,7 @@ public class MainEjemplos2ER {
 		System.out.println("¿Contiene 'java'? " + matcher.find());
 		
 		
-		//Queremos extraer todos los precios de un texto. Usamos find() para iterar.
+		//Ejemplo 10:Queremos extraer todos los precios de un texto. Usamos find() para iterar.
 		System.out.println("Extraer todos los precios de un texto -----------------------");
 		 texto = "Lista: Pan 1.50€, Leche 0.99€, Café 5.00€";
 		// Buscamos: dígitos + punto (opcional) + dígitos + símbolo €

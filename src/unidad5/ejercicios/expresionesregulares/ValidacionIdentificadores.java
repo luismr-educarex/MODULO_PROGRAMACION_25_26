@@ -1,6 +1,4 @@
 package unidad5.ejercicios.expresionesregulares;
-import java.util.HashSet;
-import java.util.Set;
 
 public class ValidacionIdentificadores {
 

@@ -8,7 +8,7 @@ public class MainEjemplosER {
 	public static void main(String[] args) {
 		
 		
-		
+		//EJEMPLO 1: Extracción de fechas (uso de grupos) ----------------------------
 		String texto = "Hoy es 06/02/2026 y mañana será "
 				+ "07/02/2026";
 		
@@ -37,8 +37,8 @@ public class MainEjemplosER {
 			System.out.println("-------------------");
 		}
 		
-		
-		
+		//EJEMPLO 2: split con Regex ----------------------------
+		//Seperaciones ----------------------------
 		// Caso A: Separar DNI de la letra
 		String dni = "45678932-J";
 		
@@ -64,12 +64,12 @@ public class MainEjemplosER {
 		    // Imprime: "12", "7", "2012"
 		}
 		
-		
+		//EJEMPLO 3: La trampa: mactches() vs find() ----------------------------
 		cadena = "12-7/2012"; // El texto es largo
 		Pattern pattern = Pattern.compile("[159]"); // Busca UN solo dígito (1, 5 o 9)
 		Matcher matcher = pattern.matcher(cadena);
 
-		// ⚠️ IMPORTANTE:
+		// IMPORTANTE:
 		// matches() intenta encajar el patrón con TODO el String.
 		// ¿"12-7/2012" es igual a un solo dígito "1"? NO.
 
@@ -82,7 +82,7 @@ public class MainEjemplosER {
 		//matches es muy exigente, quiere que todo el texto sea idéntico al patrón. 
 		//Como el texto tiene más caracteres que un simple dígito, falla
 		
-		
+		//EJEMPLO 4: Búsqueda parcial ----------------------------
 		// Regex [951] es exactamente igual a [159]. El orden dentro de [] no importa.
 		// Busca: "¿Hay algún 9, 5 o 1 por aquí?"
 		String cadena2 = "1Cic5los9";
@@ -96,6 +96,7 @@ public class MainEjemplosER {
 			System.out.println("No encontrado");
 		}
 		
+		//EJEMPLO 4: Anclas de inicio ----------------------------
 		String cadena3 = "iooooooooo";
 		// Regex ^io
 		// Significa: "Debe EMPEZAR exactamente por 'io'"
@@ -108,7 +109,7 @@ public class MainEjemplosER {
 			System.out.println("No encontrado");
 		}
 		
-		
+		//EJEMPLO 5 ----------------------------
 		String cadena4 = "aa";
 		// Regex: a{2,4}\d
 		// Significa: "La letra 'a' entre 2 y 4 veces, SEGUIDA de un dígito"
@@ -122,6 +123,8 @@ public class MainEjemplosER {
 			System.out.println("No encontrado"); // <-- Entra aquí
 		}
 		
+		
+		//EJEMPLO 6 ----------------------------
 		String cadena5 = "Hola   clase"; // Hay varios espacios en medio
 		
 		// Regex: \w\s+\w
