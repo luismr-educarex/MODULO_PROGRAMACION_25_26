@@ -10,16 +10,16 @@ public class LecturaFichero {
 
 	public static void main(String[] args) {
 		
-				try {
-					
-					BufferedReader br = new BufferedReader(new FileReader("ventas2.txt"));
+			  try {
+					//obtener el buffer a partir del lector
+					BufferedReader br = new BufferedReader(new FileReader("ventas.txt"));
 					String linea;
-
+					//mientras no llevamos a una línea que sea null. 
 					while((linea = br.readLine())!=null) {
 						System.out.println(linea);
 					}
 					
-					br.close();
+					br.close(); 
 				} 
 				catch(FileNotFoundException e){
 					System.out.println("Fichero no existe");

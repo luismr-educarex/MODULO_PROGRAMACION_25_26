@@ -11,6 +11,8 @@ public class LecturaFicheroFileReader {
 		
 		
 			File fichero = new File("ventas.txt");
+			//Nos garantizamos que existe el fichero. Si no hacemos esto debemos usar la Excepción 
+			//FileNotFoundException para manejar el caso de error cuando cuando no exista el fichero.
 			if(fichero.exists()){
 				try {
 					
