@@ -1,0 +1,15 @@
+Sooper Centro;Navalmoral de la Mata;Enero;125430.50
+Sooper Norte;Navalmoral de la Mata;Enero;98450.75
+Sooper Centro;Plasencia;Enero;143200.00
+Sooper Oeste;Cáceres;Enero;210340.90
+Sooper Centro;Navalmoral de la Mata;Febrero;118900.25
+Sooper Norte;Navalmoral de la Mata;Febrero;102300.60
+Sooper Centro;Plasencia;Febrero;137890.40
+Sooper Oeste;Cáceres;Febrero;198760.00
+Sooper Centro;Navalmoral de la Mata;Marzo;130560.80
+Sooper Norte;Navalmoral de la Mata;Marzo;110230.10
+Sooper Centro;Plasencia;Marzo;149780.35
+Sooper Oeste;Cáceres;Marzo;225900.00
+Sooper Centro;Talayuela;Enero;76450.20
+Sooper Centro;Talayuela;Febrero;81230.90
+Sooper Centro;Talayuela;Marzo;84560.00

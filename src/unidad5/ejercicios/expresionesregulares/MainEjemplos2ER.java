@@ -29,7 +29,8 @@ public class MainEjemplos2ER {
 		matcher = patron.matcher(texto);
 
 		while (matcher.find()) { // Para buscar usamos la función find del Matcher
-			System.out.println("Número encontrado: " + matcher.group() + " en posición " + matcher.start());
+			System.out.println("Número encontrado: " + matcher.group() +
+					" en posición " + matcher.start());
 		}
 
 		//Ejemplo 3: Extraer palabras concretas (OR) -----------------------------
@@ -80,7 +81,7 @@ public class MainEjemplos2ER {
 
 		//Ejemplo 7: Dividir cadenas con split() usando regex ----------------------------
 		System.out.println("Dividir cadenas con split() usando regex  -----------------------------");
-		String datos = "Juan,  Pedro ,Ana , Luis";
+		String datos = "Juan,  Pedro ,Ana , Luis Miguel,     Manolo";
 
 		// coma con espacios opcionales
 		String[] nombres = datos.split("\\s*,\\s*");
@@ -108,9 +109,9 @@ public class MainEjemplos2ER {
 		System.out.println("¿Contiene 'java'? " + matcher.find());
 		
 		
-		//Ejemplo 10:Queremos extraer todos los precios de un texto. Usamos find() para iterar.
+		//Ejemplo 10:Queremos extraer tEodos los precios de un texto. Usamos find() para iterar.
 		System.out.println("Extraer todos los precios de un texto -----------------------");
-		 texto = "Lista: Pan 1.50€, Leche 0.99€, Café 5.00€";
+		 texto = "Lista: Pan 1.50€, Leche 0.99€, Café 5.00€, Galletas 8€";
 		// Buscamos: dígitos + punto (opcional) + dígitos + símbolo €
 		Pattern p = Pattern.compile("(\\d+\\.?\\d*)€"); 
 		Matcher m = p.matcher(texto);
