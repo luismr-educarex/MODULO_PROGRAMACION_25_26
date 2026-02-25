@@ -3,9 +3,12 @@ package unidad5.ejemplos.interfaces;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
@@ -17,6 +20,9 @@ public class TablaInteractiva {
 	private JTextField nombre;
 	private JTextField edad;
 	private DefaultTableModel modelo;
+	JLabel labelNombre = new JLabel("nombre:");
+	JLabel labelEdad = new JLabel("edad:");
+	
 	
 	
 	public TablaInteractiva() {
@@ -25,14 +31,21 @@ public class TablaInteractiva {
 		ventana.setSize(600,400);
 		ventana.setLayout(null);
 		
+		JPanel panelDatos = new JPanel();
+		panelDatos.setLayout(null);
+		panelDatos.setBorder(BorderFactory.createTitledBorder("Datos alumno"));
+		panelDatos.setBounds(18, 0, 554, 80);
+
 		nombre = new JTextField();
 		edad = new JTextField();
 		
 		JButton botonAgregar = new JButton("Agregar");
 		
-		nombre.setBounds(20, 20, 125, 30);
-		edad.setBounds(180, 20, 100, 30);
-		botonAgregar.setBounds(300, 20, 120, 30);
+		labelNombre.setBounds(20, 10, 125, 30);
+		nombre.setBounds(20, 40, 125, 30);
+		labelEdad.setBounds(180, 10, 125, 30);
+		edad.setBounds(180, 40, 100, 30);
+		botonAgregar.setBounds(300, 40, 120, 30);
 		
 		botonAgregar.addActionListener(e ->agregarAlumno());
 		
@@ -41,12 +54,17 @@ public class TablaInteractiva {
 		JTable tabla = new JTable(modelo);
 		
 		JScrollPane scroll = new JScrollPane(tabla);
-		scroll.setBounds(20, 70, 550, 250);
+		scroll.setBounds(20, 100, 550, 250);
+
+		panelDatos.add(labelNombre);
+		panelDatos.add(labelEdad);
+		panelDatos.add(nombre);
+		panelDatos.add(edad);
+		panelDatos.add(botonAgregar);
+		panelDatos.setVisible(true);
+		ventana.add(panelDatos);
+	
 		
-		
-		ventana.add(nombre);
-		ventana.add(edad);
-		ventana.add(botonAgregar);
 		ventana.add(scroll);
 		
 		ventana.setVisible(true);
