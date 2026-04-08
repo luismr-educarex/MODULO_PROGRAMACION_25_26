@@ -1,0 +1,17 @@
+JSON
+{
+“users”: [
+	{
+		“id”: 1, 
+		“name”: “Alice”, 
+		“role”: “admin”},
+	{	“id”: 2, 
+		“name”: “Bob”, 
+		“role”: “user”}
+]
+}
+
+TOON
+users[2]{id,name,role}:
+1,Alice,admin
+2,Bob,user

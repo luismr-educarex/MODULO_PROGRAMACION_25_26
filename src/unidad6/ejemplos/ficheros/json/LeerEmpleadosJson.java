@@ -18,10 +18,11 @@ public class LeerEmpleadosJson {
 		Type empleadoLista =
 				new TypeToken<List<Empleado>>(){}.getType();
 				
-		try(FileReader lector = new FileReader("empleados.json")){
+		try(FileReader lector = new FileReader("empleadosEmpresa.json")){
 			
 			List<Empleado> empleados = 
 					       gson.fromJson(lector,empleadoLista);
+
 			
 			for(Empleado empleado:empleados) {
 				System.out.println(empleado);

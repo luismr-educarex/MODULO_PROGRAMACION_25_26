@@ -1,0 +1,32 @@
+<empleados>
+	<empleado>
+		<nombre>Tomás</nombre>
+		<edad>45</edad>
+		<ciudad>Plasencia</ciudad>
+		<conocimientos>
+			<conociento>JAVA</conociento>
+			<conociento>PHP</conociento>
+			<conociento>HTML</conociento>
+		</conocimientos>
+	</empleado>
+	<empleado>
+		<nombre>Marta</nombre>
+		<edad>23</edad>
+		<ciudad>Sevilla</ciudad>
+		<conocimientos>
+			<conociento>JAVA</conociento>
+			<conociento>PHP</conociento>
+			<conociento>HTML</conociento>
+		</conocimientos>
+	</empleado>
+	<empleado>
+		<nombre>Ana</nombre>
+		<edad>40</edad>
+		<ciudad>Cáceres</ciudad>
+		<conocimientos>
+			<conociento>JAVA</conociento>
+			<conociento>PHP</conociento>
+			<conociento>HTML</conociento>
+		</conocimientos>
+	</empleado>
+</empleados>
